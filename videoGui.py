@@ -7,9 +7,9 @@ import pyqtgraph as pg
 import cv2
 import time
 import math
-from videoThread import *
-from ballWidget import *
-from csvProcess import *
+from .videoThread import *
+from .ballWidget import *
+from .csvProcess import *
 
 
 class videoGui():

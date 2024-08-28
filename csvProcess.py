@@ -6,13 +6,8 @@ from PySide6.QtWidgets import *
 from PySide6.QtGui import *
 from PySide6.QtMultimedia import *
 from PySide6.QtMultimediaWidgets import *
-import pyqtgraph as pg
-import sys
-import cv2
-import time
-import matplotlib.pyplot as plt
-from videoThread import *
-from ballWidget import *
+from .videoThread import *
+from .ballWidget import *
 from bisect import bisect_left
 
 class csvProcess():

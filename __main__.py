@@ -1,5 +1,5 @@
-from csvProcess import *
-from videoGui import *
+from .csvProcess import *
+from .videoGui import *
 import easygui as eg
 import argparse
 
@@ -35,7 +35,7 @@ def main():
             _type_: _description_
         """
         row_index = 0
-        with open(csv_path,'r') as f:
+        with open(csv_path, 'r') as f:
             reader = csv.reader(f)
             for row in reader:
                 if(row_index == header_row):

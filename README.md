@@ -2,7 +2,16 @@ This software is an all-in-one data syncing and video playback suite, allowing a
 with an associated video of SPIRIT to view data trends as they happen. 
 
 # Startup
-To use the software, clone the repository and run the program with 5 customizable arguments:
+To use the software, clone the repository and run the program using either of the following commands
+Run directly using
+>> python3 <YOUR_PATH>/ViSync/__main__.py <flags> 
+OR 
+Install ViSync to your environment via
+>> pip install -e <YOUR_PATH>/ViSync
+and then
+>> python3 -m ViSync <flags>
+
+There are several flag arguments:
 - -v **video_path**: A path to where the video lies on your computer
 - -c **csv_path**: A path to the low-level csv
 - -s **sync_header**: The name of the column of the data being analyzed

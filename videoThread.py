@@ -1,14 +1,9 @@
-import os
-import pandas as pd
-import csv
 from PySide6.QtCore import *
 from PySide6.QtWidgets import *
 from PySide6.QtGui import *
 from PySide6.QtMultimedia import *
 from PySide6.QtMultimediaWidgets import *
 from pyqtgraph import PlotWidget, plot
-import pyqtgraph as pg
-import sys
 import cv2
 import time
 

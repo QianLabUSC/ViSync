@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "ViSync"
+version = "2024.0.0"
+requires-python = ">= 3.10"
+dependencies = [
+    "easygui>=0.98.3",
+    "numpy>=2.1.0",
+    "opencv-python>=4.10.0.84",
+    "pandas>=2.2.2",
+    "pyqtgraph>=0.13.7",
+    "PySide6>=6.7.2",
+    "PySide6_Addons>=6.7.2",
+    "PySide6_Essentials>=6.7.2",
+    "python-dateutil>=2.9.0.post0",
+    "pytz>=2024.1",
+    "shiboken6>=6.7.2",
+    "six>=1.16.0",
+    "tzdata>=2024.1",
+]
+authors = [
+    {name = "Julian Maynes"},
+    {name = "J. Diego Caporale"},
+]
+description = "Tool for syncing data and video"
+[tool.setuptools]
+py-modules = []
