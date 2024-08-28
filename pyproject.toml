@@ -4,10 +4,10 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "ViSync"
 version = "2024.0.0"
-requires-python = ">= 3.10"
+requires-python = ">= 3.8"
 dependencies = [
     "easygui>=0.98.3",
-    "numpy>=2.1.0",
+    "numpy>=2.0.0",
     "opencv-python>=4.10.0.84",
     "pandas>=2.2.2",
     "pyqtgraph>=0.13.7",
