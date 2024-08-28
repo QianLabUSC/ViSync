@@ -389,17 +389,16 @@ class videoGui():
             Returns:
                 _type_: _description_
             """
-            match primary_axis:
-                case 'height':
-                    primary_axis_index = 0
-                    secondary_axis_index = 1
-                case 'width':
-                    primary_axis_index = 1
-                    secondary_axis_index = 0
-                case _:
-                    print('Did not understand axis, defaulting to height')
-                    primary_axis_index = 0
-                    secondary_axis_index = 1
+            if (primary_axis == 'height'):
+                primary_axis_index = 0
+                secondary_axis_index = 1
+            elif (primary_axis ==  'width'):
+                primary_axis_index = 1
+                secondary_axis_index = 0
+            else:
+                print('Did not understand axis, defaulting to height')
+                primary_axis_index = 0
+                secondary_axis_index = 1
             output_size = [0,0]
             # Primary is a proportion of the main window's primary
             output_size[primary_axis_index] = proportion * (window_size[primary_axis_index])
